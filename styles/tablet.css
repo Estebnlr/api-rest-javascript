@@ -1,0 +1,126 @@
+.header-container{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header-title {
+    min-width:1024px;;
+}
+.header-searchForm{
+    display:flex;
+    max-width:1024px;;
+}
+.header-arrow{
+    min-width:1024px;;
+}
+
+
+.trendingPreview-container{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.trendingPreview-header{
+    min-width:1024px;
+    padding: 0;
+}
+.trendingPreview-movieList{
+    max-width:1024px;
+    padding: 0;
+}
+
+.genericList-container {
+    max-width:1024px;
+    gap: 5px; 
+    padding: 0;
+  }
+
+.genericList-container .movie-container {
+    width: 17.5%; 
+  }
+  
+
+.categoriesPreview-container{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.categoriesPreview-title{
+    min-width:1024px;
+}
+.categoriesPreview-list {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos en la parte superior del contenedor */
+    flex-wrap: wrap;
+    max-width:1024px;
+  }
+  .category-container{
+    width: 25%; /* Cada elemento ocupa el 25% del ancho del contenedor */
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0; /* Elimina el margen predeterminado de los elementos de la lista */
+    box-sizing: border-box;
+  }
+
+  .header-container--long {
+    position: fixed;
+    height: 80%;
+    top: 0;
+    bottom: 0;
+  }
+  .movieDetail-container{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+  }
+    .movieDetail-title, .movieDetail-score,.movieDetail-description, .categories-list{
+        max-width:1024px;  min-width:1024px;  
+    }
+  
+    .relatedMovies-title{
+        min-width:1024px; 
+        padding: 0;
+    }
+    .relatedMovies-scrollContainer{
+        max-width:1024px; 
+        padding: 0;
+        margin: 0;
+        max-height: 200px;
+    }
+
+  .liked-container{
+    display:flex;
+    align-items: center;
+    flex-direction: column; 
+  }
+  .liked-header{
+    min-width:1024px;
+    padding: 0;
+  }
+  .liked-movieList{
+    min-width:1024px;
+    padding: 0;
+  }
+
+  .footer{
+    display:flex;
+    align-items: center;
+    flex-direction: column; 
+  }
+  .footer-content{
+    display:flex;
+    max-width:1024px;
+    justify-content: center;
+  }
+  .footer-content-title{
+    display:flex;
+    width: 50%;
+  }
+  .footer-contact{
+    width: 50%;
+    justify-content: right;
+  }
+
+  .inactive {
+    display: none;
+  }

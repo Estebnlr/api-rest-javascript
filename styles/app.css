@@ -245,8 +245,9 @@ button {
   height: 241px;
   padding-left: 24px;
   padding-bottom: 16px;
-}
-
+  scrollbar-width: thin;
+  scrollbar-color: #8B48BF #f0f0f0; 
+} 
 .trendingPreview-movieList .movie-container, 
 .liked-movieList .movie-container {
   display: inline-block;
@@ -315,7 +316,7 @@ button {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 32px 24px;
+  padding: 0px 24px;
 }
 
 .genericList-container .movie-container {
@@ -381,6 +382,8 @@ button {
   white-space: nowrap;
   width: calc(100vw - 24px);
   padding-bottom: 16px;
+  scrollbar-width: thin;
+  scrollbar-color: #8B48BF #f0f0f0; 
 }
 
 .relatedMovies-scrollContainer .movie-container {
@@ -414,33 +417,37 @@ button {
 
 
 /* Footer */
-footer{
+.footer{
   display: flex;
   padding: 15px 15px;
-  width: 100%;
   align-items: center;
-  justify-content: space-evenly;
   background-color: var(--purple-dark-2);
 }
-footer p a {
+.footer-content{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.footer-content-title{
+  color: var(--purple-light-2);
+}
+.footer-content-title a{
   cursor: pointer;
   color: var(--purple-light-2);
   text-decoration: none;
-  font-weight: bold;
 }
-footer ul {
+.footer-content h2{
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer-contact {
   display: flex;
-  justify-content: space-evenly;
   list-style-type: none;
 }
 footer ul li {
   float: left;
   text-align: center;
   width: 6em;
-}
-footer p{
-  font-size: 1.3rem;
-  color: var(--purple-light-1);
 }
 footer i{
   color: var(--purple-light-1);

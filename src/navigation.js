@@ -64,7 +64,7 @@ function homePage() {
     movieDetailSection.classList.add('inactive');
     footer.classList.remove('inactive');
     
-    searchFormInput.value= '';
+   
     getTrendingMoviesPreview();
     getCategegoriesPreview();
     getLikedMovies();

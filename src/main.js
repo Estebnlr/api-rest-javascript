@@ -57,7 +57,7 @@ const api = axios.create({
     movies,
     container,
     {
-      lazyLoad = false,
+      lazyLoad = true,
       clean = true,
     } = {},
   ) {
@@ -212,7 +212,7 @@ const api = axios.create({
       
       const scrollIsBottom = (scrollTop + clientHeight) >= (scrollHeight - 15);
       const pageIsNotMax = page < maxPage;
-    
+      page++
       if (scrollIsBottom && pageIsNotMax) {
         page++;
         const { data } = await api('search/movie', {
@@ -249,11 +249,11 @@ const api = axios.create({
     
     const scrollIsBottom = (scrollTop + clientHeight) >= (scrollHeight - 15);
     const pageIsNotMax = page < maxPage;
-  
+    page++
     if (scrollIsBottom && pageIsNotMax) {
       const { data } = await api('trending/movie/day', {
         params: {
-          page: page++,
+          page: page,
         },
       });
       const movies = data.results;

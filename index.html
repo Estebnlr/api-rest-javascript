@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./styles/app.css" />
+  <link rel="stylesheet" href="./styles/tablet.css" media="(min-width: 1024px)">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700;800&family=Red+Hat+Display:wght@400;500&display=swap" rel="stylesheet" />
@@ -16,7 +17,7 @@
   <header id="header" class="header-container">
     <span class="header-arrow inactive">&lt;</span>
     <h1 class="header-title">Movies App</h1>
-    <h1 class="header-title header-title--categoryView inactive">Acción</h1>
+    <h1 class="header-title header-title--categoryView inactive">Acción</h1> 
 
     <form id="searchForm" class="header-searchForm">
       <input type="text" placeholder="Vengadores" />
@@ -71,25 +72,28 @@
     </article>
   </section>
 
-  <section id="genericList" class="genericList-container inactive">
-    <div class="movie-container movie-container--loading"></div>
-    <div class="movie-container movie-container--loading"></div>
-    <div class="movie-container movie-container--loading">
-      <!-- <img
-        src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
-        class="movie-img"
-        alt="Nombre de la película"
-      /> -->
-    </div>
-  </section>
+  <section class="trendingPreview-container">
+  <article id="genericList" class="genericList-container inactive">
+      <div class="movie-container movie-container--loading"></div>
+      <div class="movie-container movie-container--loading"></div>
+      <div class="movie-container movie-container--loading">
+        <!-- <img
+          src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+          class="movie-img"
+          alt="Nombre de la película"
+        />  -->
+      </div>
+    </article>
+  </section> 
 
-  <section id="movieDetail" class="movieDetail-container inactive">
-    <h1 class="movieDetail-title">Deadpool</h1>
-    <span class="movieDetail-score">7.6</span>
-    <p class="movieDetail-description">
-      Wisecracking mercenary Deadpool battles the evil and powerful Cable and other bad guys to save a boy's life.
-    </p>
 
+  <section  class="trendingPreview-container">
+  <div id="movieDetail" class="movieDetail-container inactive">
+      <h1 class="movieDetail-title">Deadpool</h1>
+      <span class="movieDetail-score">7.6</span>
+      <p class="movieDetail-description">
+        Wisecracking mercenary Deadpool battles the evil and powerful Cable and other bad guys to save a boy's life.
+      </p>
     <article class="categories-list">
       <div class="category-container category-container--loading"></div>
       <div class="category-container category-container--loading"></div>
@@ -113,11 +117,13 @@
         </div>
       </div>
     </article>
-  </section>
+  </div>
+</section>
 
   <footer class="footer inactive">
-    <p>Desarrolado por : <a target="_blank" href="https://estebnlr.github.io/manuel-lucero/portafolioCV/index.html">@manuelr</a></p>
-    <ul class="footer-contact">
+    <div class="footer-content">
+      <h2 class="footer-content-title">Desarrollado por : <a target="_blank" href="https://estebnlr.github.io/manuel-lucero/portafolioCV/index.html"> @manuelr</a></h2>
+      <ul class="footer-contact">
         <li>
             <a target="_blank" href="https://github.com/Estebnlr">
                 <i class="fa-brands fa-github"></i>
@@ -128,19 +134,20 @@
                 <i class="fa-brands fa-linkedin"></i>
             </a>
         </li>
-        <!-- <li>
-            <a target="_blank" href="https://www.instagram.com/">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
+        <!-- </li>
+        <li>
+          <a target="_blank" href="https://www.instagram.com/andresbadillo.co/">
+              <i class="fa-brands fa-instagram"></i>
+          </a>
         </li>
-       <li>
-            <a target="_blank" href="https://www.tiktok.com/">
-                <i class="fa-brands fa-tiktok"></i>
-            </a>
-       </li> -->
-    
-    </ul>
-</footer>
+        <li>
+          <a target="_blank" href="https://www.tiktok.com/@andresbadillo.co">
+              <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </li> -->
+      </ul>
+    </div>
+  </footer>
   
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="./src/secret.js"></script>
